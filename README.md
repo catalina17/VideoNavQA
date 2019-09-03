@@ -5,7 +5,7 @@ The VideoNavQA dataset can be found [here](https://drive.google.com/drive/folder
 
 Dependencies
 * model evaluation:
-  * [Faster-RCNN](https://github.com/catalina17/faster-rcnn.pytorch) fork
+  * [Faster-RCNN](https://github.com/catalina17/faster-rcnn.pytorch) fork (with VGG-16 pre-trained [weights](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0))
 * data generation:
   * [EmbodiedQA](https://github.com/catalina17/EmbodiedQA) fork
   * [House3D](https://github.com/catalina17/House3D) fork
