@@ -1,7 +1,18 @@
 # VideoNavQA
-Resources for *VideoNavQA: Bridging the Gap between Visual and Embodied Question Answering* (to appear at BMVC 2019) [[arXiv](https://arxiv.org/abs/1908.04950)].
+Resources for *VideoNavQA: Bridging the Gap between Visual and Embodied Question Answering* (published at BMVC 2019, spotlight talk at ViGIL NeurIPS 2019) [[arXiv](https://arxiv.org/abs/1908.04950)].
 
 The VideoNavQA dataset can be found [here](https://drive.google.com/drive/folders/1DpEdjmVDMeJZ0ohS_TTp0HAjEbX0fU_m?usp=sharing).
+
+Please cite us if you use our code/dataset in your work:
+
+```
+@article{cangea2019videonavqa,
+  title={VideoNavQA: Bridging the Gap between Visual and Embodied Question Answering},
+  author={Cangea, C{\u{a}}t{\u{a}}lina and Belilovsky, Eugene and Li{\`o}, Pietro and Courville, Aaron},
+  journal={arXiv preprint arXiv:1908.04950},
+  year={2019}
+}
+```
 
 Dependencies
 * model evaluation:
