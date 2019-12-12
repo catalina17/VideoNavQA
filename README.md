@@ -3,7 +3,7 @@ Resources for *VideoNavQA: Bridging the Gap between Visual and Embodied Question
 
 The VideoNavQA dataset can be found [here](https://drive.google.com/drive/folders/1DpEdjmVDMeJZ0ohS_TTp0HAjEbX0fU_m?usp=sharing).
 
-Please cite us if you use our code/dataset in your work:
+Please cite us if you use our code or the VideoNavQA benchmark:
 
 ```
 @article{cangea2019videonavqa,
@@ -22,5 +22,3 @@ Dependencies
   * [House3D](https://github.com/catalina17/House3D) fork
   * SUNCG [dataset](https://sscnet.cs.princeton.edu)
   * SUNCG [toolbox](https://github.com/jjhartmann/SUNCGtoolbox)
-
-Full README coming soon!
