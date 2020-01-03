@@ -8,6 +8,13 @@ We introduce the **VideoNavQA** task: by removing the navigation and action sele
 
 ## Getting started
 
+```
+$ git clone https://github.com/catalina17/VideoNavQA.git VideoNavQA
+$ virtualenv -p $(which python3) videonavqa
+$ source videonavqa/bin/activate
+$ pip install -r requirements.txt
+```
+
 ### Dataset
 
 The **VideoNavQA** benchmark data can be found [here](https://drive.google.com/drive/folders/1DpEdjmVDMeJZ0ohS_TTp0HAjEbX0fU_m?usp=sharing).
