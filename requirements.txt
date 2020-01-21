@@ -45,7 +45,7 @@ Pygments==2.3.1
 pyparsing==2.2.0
 python-dateutil==2.7.3
 pytz==2018.5
-requests==2.19.1
+requests==2.20.0
 resampy==0.2.1
 scikit-image==0.14.0
 scikit-learn==0.20.2
