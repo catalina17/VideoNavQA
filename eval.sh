@@ -56,4 +56,5 @@ python q_and_v_eval.py \
     --num_epochs $num_epochs \
     --best_acc $best_acc \
     --frcnn_pretrained_path $frcnn_pretrained_path \
+    --checkpoint_path $checkpoint_path \
     --stats_after_every $stats_after_every &>> $log_file
