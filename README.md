@@ -38,6 +38,9 @@ The **VideoNavQA** benchmark data can be found [here](https://drive.google.com/d
   * SUNCG [dataset](https://sscnet.cs.princeton.edu)
   * SUNCG [toolbox](https://github.com/jjhartmann/SUNCGtoolbox)
 
+## Running the models
+The sample script `eval.sh` allows running (as-is) the FiLM-based models described in our paper. One epoch takes a few hours on an Nvidia P100 16GB GPU; it is likely that you will need to resume training from the specified checkpoint every 1-3 epochs. You may then test your model using the `q_and_v_test.py` script, with similar command-line arguments.
+
 ## Citation
 Please cite us if you use our code or the VideoNavQA benchmark:
 
