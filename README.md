@@ -17,11 +17,13 @@ $ pip install -r requirements.txt
 
 ### Dataset
 
-The **VideoNavQA** benchmark data can be found [here](https://drive.google.com/drive/folders/1DpEdjmVDMeJZ0ohS_TTp0HAjEbX0fU_m?usp=sharing).
+The **VideoNavQA** benchmark data can be found [here](https://drive.google.com/drive/folders/1DpEdjmVDMeJZ0ohS_TTp0HAjEbX0fU_m?usp=sharing). After expanding the archive to a specific directory, please update `BASE_DIR` (declared in `eval/utils.py`) with that path.
 
 ### Dependencies
 * Model evaluation:
   * [Faster-RCNN](https://github.com/catalina17/faster-rcnn.pytorch) fork (with VGG-16 pre-trained [weights](https://www.dropbox.com/s/s3brpk0bdq60nyb/vgg16_caffe.pth?dl=0))
+  * pretrained object detector for extracting visual features (`OBJ_DETECTOR_PATH` in `eval/utils.py`) should be initialised from [this checkpoint](https://www.dropbox.com/s/o7k0o7d1bwc77du/obj_detect.pt) instead of the one initially provided in the dataset archive - **please make sure to replace the file!**
+
 * Data generation tools:
   * [EmbodiedQA](https://github.com/catalina17/EmbodiedQA) fork
   * [House3D](https://github.com/catalina17/House3D) fork
