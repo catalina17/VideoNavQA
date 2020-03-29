@@ -14,15 +14,16 @@ at_hidden_size=128
 hidden_size=128
 batch_size=32
 loss_reduction="sum"
-lrate=0.0001
+l_rate=0.0001
 num_epochs=1
 best_acc=0
 stats_after_every=500
+frcnn_pretrained_path="../vgg16_caffe.pth"
 
 case ${mode} in
-film_attn_pt)
+time_multi_hop)
   batch_size=16
-  lrate=0.00005
+  l_rate=0.00005
   checkpoint_path="tmh_sum_5e-5_3b_1024f_64t.pt"
   log_file="tmh_sum_5e-5_3b_1024f_64t.log"
   ;;
@@ -32,7 +33,7 @@ film_gp_pt)
   checkpoint_path="gp_sum_1e-4_4b_1024f_32t.pt"
   log_file="gp_sum_1e-4_4b_1024f_32t.log"
   ;;
-time_multi_hop)
+film_attn_pt)
   num_res_blocks=5
   checkpoint_path="at_sum_1e-4_4b_1024f_128ah_128h.pt"
   log_file="at_sum_1e-4_4b_1024f_128ah_128h.log"
@@ -40,8 +41,8 @@ time_multi_hop)
 esac
 
 cd eval/;
-CUDA_VISIBLE_DEVICES=${GPU} python q_and_v_eval.py \
-    --mode $mode \
+python q_and_v_eval.py \
+    --model $mode \
     --num_classes $num_classes \
     --vocab_size $vocab_size \
     --num_res_blocks $num_res_blocks \
@@ -51,7 +52,8 @@ CUDA_VISIBLE_DEVICES=${GPU} python q_and_v_eval.py \
     --hidden_size $hidden_size \
     --batch_size $batch_size \
     --loss_reduction $loss_reduction \
-    --lrate $lrate \
+    --l_rate $l_rate \
     --num_epochs $num_epochs \
     --best_acc $best_acc \
+    --frcnn_pretrained_path $frcnn_pretrained_path \
     --stats_after_every $stats_after_every &>> $log_file
