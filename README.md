@@ -10,7 +10,7 @@ We introduce the **VideoNavQA** task: by removing the navigation and action sele
 
 ```
 $ git clone https://github.com/catalina17/VideoNavQA
-$ virtualenv -p $(which python3) videonavqa
+$ virtualenv -p python3 videonavqa
 $ source videonavqa/bin/activate
 $ pip install -r requirements.txt
 ```
