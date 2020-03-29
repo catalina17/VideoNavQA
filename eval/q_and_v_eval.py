@@ -59,7 +59,6 @@ parser.add_argument('--use_class_weights', type=bool, default=False)
 # Other args
 parser.add_argument('--best_acc', type=float, default=0)
 parser.add_argument('--checkpoint_path', type=str)
-parser.add_argument('--dataset', type=str, default='v3')
 parser.add_argument('--frcnn_pretrained_path', type=str)
 parser.add_argument('--num_workers', type=int, default=4)
 parser.add_argument('--stats_after_every', type=int, default=400)
@@ -264,18 +263,18 @@ if __name__=='__main__':
                              q_embedding_size=args.embed_size,
                              nb_classes=num_classes,
                              vocab_size=args.vocab_size)
-   elif args.model == 'film_attn_pt':
-       model = FiLMAttnPretrainedStem(batch_size=args.batch_size,
-                                      q_embedding_size=args.embed_size,
-                                      nb_classes=num_classes,
-                                      q_encoder=args.q_encoder,
-                                      num_input_channels=args.num_input_channels,
-                                      num_res_block_channels=args.num_res_block_channels,
-                                      num_res_blocks=args.num_res_blocks,
-                                      hidden_size=args.hidden_size,
-                                      at_hidden_size=args.at_hidden_size,
-                                      max_num_frames=MAX_ALLOWED_NUM_FRAMES_DROPPING,
-                                      vocab_size=args.vocab_size)
+    elif args.model == 'film_attn_pt':
+        model = FiLMAttnPretrainedStem(batch_size=args.batch_size,
+                                       q_embedding_size=args.embed_size,
+                                       nb_classes=num_classes,
+                                       q_encoder=args.q_encoder,
+                                       num_input_channels=args.num_input_channels,
+                                       num_res_block_channels=args.num_res_block_channels,
+                                       num_res_blocks=args.num_res_blocks,
+                                       hidden_size=args.hidden_size,
+                                       at_hidden_size=args.at_hidden_size,
+                                       max_num_frames=MAX_ALLOWED_NUM_FRAMES_DROPPING,
+                                       vocab_size=args.vocab_size)
     elif args.model == 'film_gp_pt':
         model = FiLMGlobalPoolingPretrainedStem(batch_size=args.batch_size,
                                                 q_embedding_size=args.embed_size,
