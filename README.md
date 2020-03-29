@@ -6,7 +6,7 @@
 
 We introduce the **VideoNavQA** task: by removing the navigation and action selection requirements from [Embodied QA](http://embodiedqa.org/), we increase the difficulty of the visual reasoning component via a much larger question space, tackling the sort of complex reasoning questions that make QA tasks challenging. By designing and evaluating several VQA-style models on the dataset, we establish a novel way of evaluating EQA feasibility given existing methods, while highlighting the difficulty of the problem even in the most ideal setting.
 
-![Sample videos](https://github.com/catalina17/VideoNavQA/blob/master/samples/v1.gif) | ![Sample videos](https://github.com/catalina17/VideoNavQA/blob/master/samples/v2.gif) | ![Sample videos](https://github.com/catalina17/VideoNavQA/blob/master/samples/v3.gif)
+![Sample videos](https://www.cl.cam.ac.uk/~ccc53/files/VNQA/v1.gif) | ![Sample videos](https://www.cl.cam.ac.uk/~ccc53/files/VNQA/v2.gif) | ![Sample videos](https://www.cl.cam.ac.uk/~ccc53/files/VNQA/v3.gif)
 :---: | :---: | :---:
 _'Where is the green rug next to the sofa?'_ | _'Are the computer and the bed the same color?'_ | _'What is the thing next to the tv stand located in the living room?'_
 
