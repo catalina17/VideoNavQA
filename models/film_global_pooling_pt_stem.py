@@ -20,7 +20,7 @@ class FiLMGlobalPoolingPretrainedStem(nn.Module):
                  num_res_blocks=1,
                  hidden_size=128,
                  q_encoder='lstm',
-                 vocab_size):
+                 vocab_size=134):
         super(FiLMGlobalPoolingPretrainedStem, self).__init__()
 
         assert q_encoder.lower() in ['lstm', 'bow'], "Invalid question encoder! (\'lstm\', \'bow\')"

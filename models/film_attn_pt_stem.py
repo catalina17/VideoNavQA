@@ -22,7 +22,7 @@ class FiLMAttnPretrainedStem(nn.Module):
                  at_hidden_size=128,
                  max_num_frames=35,
                  q_encoder='lstm',
-                 vocab_size):
+                 vocab_size=134):
         super(FiLMAttnPretrainedStem, self).__init__()
 
         assert q_encoder.lower() in ['lstm', 'bow'], "Invalid question encoder! (\'lstm\', \'bow\')"

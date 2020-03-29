@@ -19,7 +19,7 @@ class TimeMultiHopFiLMPretrainedStem(nn.Module):
                  num_res_blocks=1,
                  num_tail_channels=32,
                  hidden_size=128,
-                 vocab_size):
+                 vocab_size=134):
         super(TimeMultiHopFiLMPretrainedStem, self).__init__()
 
         self.nb_classes = nb_classes
