@@ -57,7 +57,6 @@ parser.add_argument('--num_epochs', type=int, default=1)
 parser.add_argument('--use_class_weights', type=bool, default=False)
 
 # Other args
-parser.add_argument('--best_acc', type=float, default=0)
 parser.add_argument('--checkpoint_path', type=str)
 parser.add_argument('--frcnn_pretrained_path', type=str)
 parser.add_argument('--num_workers', type=int, default=4)
@@ -334,7 +333,6 @@ if __name__=='__main__':
     optimizer = optim.Adam(model.parameters(), lr=args.l_rate)
 
     start_epoch = 0
-    best_acc = args.best_acc
     # Load checkpoint
     if not args.checkpoint_path is None:
         if not os.path.exists(args.checkpoint_path):
