@@ -57,4 +57,5 @@ python q_and_v_eval.py \
     --best_acc $best_acc \
     --frcnn_pretrained_path $frcnn_pretrained_path \
     --checkpoint_path $checkpoint_path \
-    --stats_after_every $stats_after_every &>> $log_file
+    --stats_after_every $stats_after_every &>> $log_file &
+tail -f $log_file
