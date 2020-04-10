@@ -14,7 +14,6 @@ numpy==1.15.0
 opencv-python==3.4.2.17
 panda3d==1.10.0.dev1654
 pandas==0.24.2
-Pillow==6.2.0
 pprint==0.1
 pycparser==2.20
 pyparsing==2.4.6
