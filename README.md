@@ -1,7 +1,7 @@
 # VideoNavQA
 
 [**VideoNavQA: Bridging the Gap between Visual and Embodied Question Answering**](https://arxiv.org/abs/1908.04950)  
-*[BMVC 2019](https://bmvc2019.org/programme/detailed-programme/), spotlight talk at [ViGIL NeurIPS 2019](https://vigilworkshop.github.io/#schedule)*  
+*[BMVC 2019](https://bmvc2019.org/programme/detailed-programme/), spotlight talk at [ViGIL NeurIPS 2019](https://vigilworkshop.github.io/2019)*  
 [Cătălina Cangea](https://www.cl.cam.ac.uk/~ccc53/), [Eugene Belilovsky](http://eugenium.github.io/), [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/), [Aaron Courville](https://mila.quebec/en/person/aaron-courville/)
 
 We introduce the **VideoNavQA** task: by removing the navigation and action selection requirements from [Embodied QA](http://embodiedqa.org/), we increase the difficulty of the visual reasoning component via a much larger question space, tackling the sort of complex reasoning questions that make QA tasks challenging. By designing and evaluating several VQA-style models on the dataset, we establish a novel way of evaluating EQA feasibility given existing methods, while highlighting the difficulty of the problem even in the most ideal setting.
